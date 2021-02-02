@@ -1,0 +1,7 @@
+knocked out
+/html/body/div/div/main/div/div[3]/div[2]/div/div/div[2]/div/img
+document.querySelector("#__next > div > main > div > div.br-game-layout__popups > div.popup.popup--red > div > div > div.popup__layer.popup__layer--layer-0 > div > img")
+<img src="/_next/static/images/knockedout-6a595c7fee6b3ff81f5bf16d54f0e0aa.png" alt="You were knocked out">
+<span class="popup-view__header--answer">Chile</span>
+
+<p class="popup-view__header">The right answer was<span class="popup-view__header--answer">Chile</span>. bingus-lover was the last one standing and won the game!</p>
