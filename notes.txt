@@ -16,3 +16,14 @@ Error in event handler: ReferenceError: document is not defined
 
 
 contentScript.js:17 Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.
+
+
+<div class="circle circle--dynamic circle--raised circle--white circle--border-color-white circle--border-size-factor-2 circle--overflow-hidden">
+  <div class="square ">
+    <div class="circle__inner-circle">
+      <div class="circle__content">
+        <img src="http://placehold.it/150x150" class="circle-image circle-image--cover" alt="al">
+      </div>
+    </div>
+  </div>
+</div>
