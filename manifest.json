@@ -9,7 +9,10 @@
   "permissions": [
     "storage",
     "activeTab",
-    "scripting"
+    "tabs",
+    "scripting",
+    "contextMenus",
+    "webNavigation"
   ],
   "action": {
     "default_title": "GeoPassport",
@@ -27,5 +30,11 @@
     "48": "/images/get_started48.png",
     "128": "/images/get_started128.png"
   },
-  "options_page": "options.html"
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["https://www.geoguessr.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
 }

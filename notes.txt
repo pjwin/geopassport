@@ -5,3 +5,14 @@ document.querySelector("#__next > div > main > div > div.br-game-layout__popups 
 <span class="popup-view__header--answer">Chile</span>
 
 <p class="popup-view__header">The right answer was<span class="popup-view__header--answer">Chile</span>. bingus-lover was the last one standing and won the game!</p>
+
+
+document.getElementsByClassName("user-nick")
+
+document.getElementsByClassName("layout__header")[0].getElementsByClassName("user-nick")[0].innerHTML
+
+Error in event handler: ReferenceError: document is not defined
+    at chrome.webNavigation.onCompleted.addListener.url.urlMatches (chrome-extension://kmmbfkedomlodinmpkhlfhnlnejblamo/background.js:12:29)
+
+
+contentScript.js:17 Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.
