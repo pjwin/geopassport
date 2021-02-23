@@ -16,11 +16,19 @@ const documentObserverCallback = function (mutations) {
           //get a NodeList of all the child nodes that are of class wrong-guesses__flag
           var wrongFlags = node.querySelectorAll("div.wrong-guesses__flag");
           wrongFlags.forEach(function (node) {
-              console.log(countries[node.getElementsByTagName("img")[0].alt.toUpperCase()]);
+            console.log(countries[node.getElementsByTagName("img")[0].alt.toUpperCase()]);
+            var flagImage = node.getElementsByTagName("img")[0];
+            var countryName = countries[flagImage.alt.toUpperCase()];
+            node.innerHTML = "";
+            node.innerHTML = countryName;
           })
         }
         else if (node.className === "wrong-guesses__flag") {
           console.log(countries[node.getElementsByTagName("img")[0].alt.toUpperCase()]);
+          var flagImage = node.getElementsByTagName("img")[0];
+          var countryName = countries[flagImage.alt.toUpperCase()];
+          node.innerHTML = "";
+          node.innerHTML = countryName;
         }
       })
     }
